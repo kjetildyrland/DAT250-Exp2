@@ -18,8 +18,23 @@ public class Adress {
 	private String street;
 	private int number; 
 
-	@ManyToMany(mappedBy = "adress")
+	@ManyToMany(mappedBy = "adressList")
 	private final List<Person> persons = new ArrayList<Person>();
+	
+	
+	
+	
+
+	public Adress() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Adress(String street, int number) {
+		super();
+		this.street = street;
+		this.number = number;
+	}
 
 	public int getId() {
 		return id;

@@ -17,12 +17,11 @@ public class CreditCard {
     private int limit;
     private int balance;
     
-    
     private Pincode pincode; 
     
-    private Bank bank; 
+    private Bank bank;
     
-    private 
+    
   
     @ManyToOne
     public Bank getBank() {
